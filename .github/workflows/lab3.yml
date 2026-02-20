@@ -1,0 +1,19 @@
+name: Lab3 Workflow
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hello
+        run: echo "Hello from Lab3"
+
+      - name: System info
+        run: |
+          uname -a
+          nproc
+          free -h || true
+          df -h
