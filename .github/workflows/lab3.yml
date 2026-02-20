@@ -2,6 +2,9 @@ name: Lab3 Workflow
 
 on:
   push:
+    branches:
+      - main
+      - feature/lab3
   workflow_dispatch:
 
 jobs:
